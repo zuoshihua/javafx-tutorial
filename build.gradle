@@ -4,12 +4,15 @@ plugins {
     id 'com.github.johnrengelman.shadow' version '7.1.2'
 }
 
+sourceCompatibility = "17"
+targetCompatibility = "17"
+
 repositories {
     mavenCentral()
 }
 
 application {
-    mainClass.set("Duke")
+    mainClass.set("Launcher")
 }
 
 shadowJar {
